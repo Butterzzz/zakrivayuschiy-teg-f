@@ -15,10 +15,11 @@
 */
 
 .page {
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
 }
 
 .font {
