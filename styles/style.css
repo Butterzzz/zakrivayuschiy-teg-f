@@ -20,6 +20,8 @@
   min-block-size: 100dvb;
   background-color: var(--bg-color);
   color: var(--accent-color);
+  background-image: var(--bg-gradient);
+  background-size: cover;
 }
 
 .font {
