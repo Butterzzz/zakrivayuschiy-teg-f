@@ -72,6 +72,30 @@
   outline: none;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button::after {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-end: -5px;
+  inline-size: 100%;
+  block-size: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
 }
 
 .theme-menu__button:disabled {
@@ -85,6 +109,11 @@
   height: 14px;
   position: absolute;
   left: -20px;
+  animation: arrow 0.5s infinite alternate ease-in-out;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
 }
 
 .card {
@@ -114,7 +143,8 @@
   font-family: var(--accent-font);
   font-size: 14px;
   text-transform: uppercase;
-  text-shadow: -1px 0 var(--label-stroke), 0 1px var(--label-stroke), 1px 0 var(--label-stroke), 0 -1px var(--label-stroke);
+  text-shadow: -1px 0 var(--label-stroke), 0 1px var(--label-stroke),
+    1px 0 var(--label-stroke), 0 -1px var(--label-stroke);
   opacity: 0.5;
   mix-blend-mode: hard-light;
 }
@@ -199,10 +229,13 @@
   }
 }
 
-@supports((text-stroke: 1px var(--label-stroke)) or (-webkit-text-stroke: 1px var(--label-stroke))) {
+@supports (
+  (text-stroke: 1px var(--label-stroke)) or
+    (-webkit-text-stroke: 1px var(--label-stroke))
+) {
   p {
-      -webkit-text-stroke: 1px 1px var(--label-stroke);
-      text-stroke: 1px 1px var(--label-stroke);
-      text-shadow: none;
+    -webkit-text-stroke: 1px 1px var(--label-stroke);
+    text-stroke: 1px 1px var(--label-stroke);
+    text-shadow: none;
   }
-} 
+}
