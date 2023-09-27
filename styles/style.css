@@ -187,7 +187,7 @@
   position: relative;
   z-index: 2;
   mix-blend-mode: difference;
-  color: var(--color-button-hover);
+  color: var(--button-hover-color);
 }
 
 .card__like-button {
@@ -232,7 +232,7 @@
   width: 21px;
   height: 21px;
   padding-bottom: 3px;
-  color: var(--color-button-hover);
+  color: var(--button-hover-color);
 }
 
 .card__icon-button:focus,
@@ -248,6 +248,10 @@
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color);
+}
+
+.sparks {
+  opacity: 0;
 }
 
 @media (width <= 375px) {

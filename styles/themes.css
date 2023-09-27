@@ -14,7 +14,8 @@
                   repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 4px),
                   linear-gradient(180deg, #007f0c 0.01%, #004306);
   --label-stroke: #000;
-  --color-button-hover: #00cc14;
+  --button-hover-color: #00cc14;
+  --contour-heart-color: #00cc14;
 }
 
 :root.theme-light {
@@ -26,7 +27,8 @@
                   repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
                   linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
   --label-stroke: #fff;
-  --color-button-hover: #fff;
+  --button-hover-color: #fff;
+  --contour-heart-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,6 +41,7 @@
                     repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 4px),
                     linear-gradient(180deg, #007f0c 0.01%, #004306);
     --label-stroke: #000;
-    --color-button-hover: #00cc14;
+    --button-hover-color: #00cc14;
+    --contour-heart-color: #00cc14;
   }
 }
