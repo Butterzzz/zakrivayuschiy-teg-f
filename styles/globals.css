@@ -57,7 +57,8 @@ ol {
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 0;
   overflow-x: hidden;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
